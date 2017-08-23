@@ -6,21 +6,17 @@ import { Lista } from '../../app/models/index';
 import { DetailPage } from '../detail/detail';
 
 @Component({
-  selector: 'page-pendientes',
-  templateUrl: 'pendientes.html'
+  selector: 'page-terminados',
+  templateUrl: 'terminados.html'
 })
-export class PendientesPage {
+export class TerminadosPage {
   public listas: Lista[] = [];
 
   constructor(
-      public navCtrl: NavController,
-      public _listaDeseosServices:ListaDeseosServices
+    public navCtrl: NavController,
+    public _listaDeseosServices:ListaDeseosServices
   ) {
 
-  }
-
-  irAgregar(){
-    this.navCtrl.push(AgregarPage);
   }
 
   verDetalle(lista: Lista, idx) {
